@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/RESTApp/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<script src="/RESTApp/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+	<script src="./javaS/mainVoz.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="./cssJA/pocetna.css">
+	
+	<meta charset="UTF-8">
+
+<title>Vozila</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-success navbar-dark">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#" id="logA"></a>
+    </div>
+ 
+  <ul class="navbar-nav">
+       <li class="nav-item">
+      <a class="nav-link" href="#" id="rr">Restorani</a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" href="#" id="aa">Artikli</a>
+    </li>
+      <li class="nav-item">
+      <a class="nav-link" href="#" id="kk">Korisnici</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#" id="pp">Porudžbine</a>
+    </li>
+  </ul>
+     <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#" id="odjava">Odjava </a>
+      </li>
+    </ul>
+</nav>
+
+<form id="dodajVoz">
+<h1 class="nazlov">Vozila:</h1>&nbsp;<input type="submit" value="Novo vozilo" class="btn btn-success">
+</form>
+<br/>
+<form id="novoVoz" hidden=true>
+<div style="border: solid gray;">
+<fieldset>
+<legend id="nazicV">Novo vozilo</legend>
+<table>
+<tr><td>Marka*: </td><td><input type="text" id="mark" required="required" autofocus="autofocus"></td></tr>
+<tr><td>Model*: </td><td><input type="text" id="mod" required="required"></td></tr>
+<tr><td>Tip:</td><td><select id="tipv"><option value="automobil">automobil</option><option value="skuter">skuter</option><option value="bicikl">bicikl</option></select></td></tr>
+<tr><td>Registarska oznaka:* </td><td><input type="text" id="reg" required="required"></td></tr>
+<tr><td>Godina proizvodje*: </td><td><input type="text" id="god" required="required"></td></tr>
+<tr><td>Napomena: </td><td><input type="text" id="nap"></td></tr>
+<tr><td></td><td><input type="submit" value="Dodaj" id="dodizV" class="btn btn-success"></td></tr>
+</table>
+</fieldset>
+</div>
+</form>
+
+<br/>
+<div id="vozz"></div>
+</body>
+</html>
