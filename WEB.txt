@@ -1,0 +1,5 @@
+Defaultna sifra i username za svaku od uloga (administrator,dostavljac i kupac) u beans->Korisnici->setListaKorisnika()
+
+Administrator: admin admin
+Kupac: Masa masa
+Dostavljac: d d
